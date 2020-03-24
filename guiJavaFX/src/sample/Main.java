@@ -91,7 +91,7 @@ public class Main extends Application {
         recB.setOnAction(e ->{
             try{
                 ProcessBuilder builder = new ProcessBuilder(
-                        "cmd.exe", "/c", "cd \"..\\OOP Project\" && python recognize.py");
+                        "cmd.exe", "/c", "cd \"..\\OOP_python\" && python recognize.py");
                 builder.redirectErrorStream(true);
                 Process p = builder.start();
                 BufferedReader r = new BufferedReader(new InputStreamReader(p.getInputStream()));
@@ -118,7 +118,7 @@ public class Main extends Application {
         trainB.setOnAction(e ->{
             try{
                 ProcessBuilder builder = new ProcessBuilder(
-                        "cmd.exe", "/c", "cd \"..\\OOP Project\" && python trainimg.py");
+                        "cmd.exe", "/c", "cd \"..\\OOP_python\" && python trainimg.py");
                 builder.redirectErrorStream(true);
                 Process p = builder.start();
                 BufferedReader r = new BufferedReader(new InputStreamReader(p.getInputStream()));
@@ -141,7 +141,7 @@ public class Main extends Application {
             primaryStage.setIconified(true);
             try{
                 ProcessBuilder builder = new ProcessBuilder(
-                        "cmd.exe", "/c", "cd \"..\\OOP Project\" && python train.py");
+                        "cmd.exe", "/c", "cd \"..\\OOP_python\" && python train.py");
                 builder.redirectErrorStream(true);
                 Process p = builder.start();
                 BufferedReader r = new BufferedReader(new InputStreamReader(p.getInputStream()));
